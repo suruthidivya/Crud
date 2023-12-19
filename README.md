@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# CRUD operation using redux toolkit
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

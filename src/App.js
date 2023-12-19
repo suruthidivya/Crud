@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+
 import './App.css';
+import AddTask from './components/AddTask';
+import Navbar from './components/Navbar';
+import { Container } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
+import TasksLists from './components/TasksLists';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Container>
+      <Navbar/>
+      <Row className='justify-content-center'>
+        <Col lg="5">
+        <AddTask/>
+        </Col>
+        <TasksLists/>
+      </Row>
+       
+        
+        
+    
+    </Container>
+    </>
   );
 }
 
